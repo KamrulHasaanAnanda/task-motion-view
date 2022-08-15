@@ -1,0 +1,90 @@
+.Pro__card {
+  padding: 20px;
+  border: solid 1px #ced4da75;
+  border-radius: 8px;
+  border: solid 2px rgb(206 212 218);
+  border-radius: 8px;
+  transition: 0.3s;
+  &:hover {
+    box-shadow: 0 5px 22px -16px black;
+    border-color: #ee5a245e;
+  }
+  &:hover .pdtCrd__img .linking {
+    right: 5px;
+  }
+  button {
+    background: #009688;
+    color: white;
+    transition: 0.3s;
+    &:hover {
+      background: #ee5a24d6;
+      border-color: #ee5a24d6;
+      color: white;
+    }
+  }
+  p {
+    font-size: 1.08rem;
+    margin: 0;
+    font-weight: 700;
+  }
+  .sub_title {
+    color: #6c757dcc;
+    font-size: 0.85rem;
+  }
+  .pdtCrd__img {
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    .discount {
+      position: absolute;
+      top: 20px;
+      left: 0;
+      background: #009688;
+      color: white;
+      padding: 6px;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+      font-size: 1rem;
+      font-weight: 600;
+      span {
+        background: white;
+        color: #009688;
+        display: inline-block;
+        padding: 6px 3px;
+        border-radius: 50%;
+        font-size: 0.85rem;
+        font-weight: 700;
+        margin-left: 2px;
+      }
+    }
+    .linking {
+      position: absolute;
+      background: #ee5a24;
+      color: white;
+      width: 15%;
+      border-radius: 10px;
+      padding: 12px 0px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      align-items: center;
+      transition: 0.5s;
+      right: -50px;
+      top: 50%;
+      transform: translateY(-50%);
+      span {
+        font-size: 1rem;
+      }
+    }
+  }
+  .price {
+    color: white;
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    background: #009688;
+    width: fit-content;
+    padding: 2px 10px;
+    border-radius: 8px;
+  }
+}

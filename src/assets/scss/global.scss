@@ -1,0 +1,44 @@
+.sidebar_drawer {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  margin-top: -45px;
+  width: 90px;
+  height: 50px;
+  background-color: #ff9800;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px 0px 0px 5px;
+  transition: all 0.3s ease;
+  z-index: 999;
+
+  .cart_count {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1;
+    span {
+      margin-left: 10px;
+    }
+  }
+
+  .total_price {
+    padding: 7px 15px;
+    background-color: #fff;
+    color: #000;
+    line-height: 1;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 600;
+    display: block;
+    margin-top: 5px;
+  }
+}
+
+.check-select {
+  width: 400px;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #009688;
+}

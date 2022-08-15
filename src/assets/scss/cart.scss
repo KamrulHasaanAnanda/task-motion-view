@@ -1,0 +1,142 @@
+.cart-container {
+  position: fixed;
+
+  right: 0;
+  width: 0px;
+
+  border: 1 px solid #ff9800;
+  color: #fff;
+
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  background-color: #fff;
+  height: 100vh;
+  box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%);
+  transition: all 0.3s ease;
+  .cart-header {
+    background-color: #ff9800;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    .cart-icon span {
+      font-size: 16px;
+      margin: 0px 7px;
+      font-weight: 600;
+    }
+    .close {
+      margin-top: 10px;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+
+  .cart-product-container {
+    height: calc(100vh - 240px);
+    overflow-y: auto;
+  }
+  .cart-footer {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+
+    .product-other-charge {
+      padding: 15px 20px;
+      display: none;
+      p {
+        font-weight: 700;
+        margin-bottom: 5px;
+      }
+      a {
+        color: var(--primary);
+        font-weight: 500;
+      }
+    }
+    .cart-total {
+      padding: 15px 20px;
+      background-color: #ff9800;
+      position: relative;
+      z-index: 2;
+      .saving {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 5px;
+      }
+      .total-price {
+        font-weight: 700;
+        font-size: 20px;
+        color: var(--primary);
+        margin-bottom: 5px;
+      }
+      .procced-checkout {
+        background-color: black;
+        color: #fff;
+        display: block;
+        text-align: center;
+        padding: 10px 30px;
+        border-radius: 5px;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  // padding: 10px;
+}
+
+.cart-open {
+  width: 350px;
+}
+.cart-close {
+  width: 0px;
+}
+
+// cart-product item
+.cross {
+  position: relative;
+
+  margin-top: -60px;
+  padding-left: 20px;
+  color: #009688;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.imageCart {
+  border: 1px solid black;
+  padding: 1px;
+  height: 60px;
+  width: 80px;
+  object-fit: cover;
+}
+
+.cartDetails {
+  h5 {
+    margin: 0;
+    font-size: 18px;
+    font-family: fangsong;
+  }
+  p {
+    margin: 0;
+  }
+  .buttonS {
+    background-color: #ff9800;
+    color: white;
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  .price-span {
+    font-size: 15px;
+    background: red;
+    color: white;
+    padding: 7px;
+    font-weight: 600;
+  }
+}
